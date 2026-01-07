@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Gikomba | Buy & Sell Clothes</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      color: #555;
+    }
+
+    .hero button {
+      padding: 12px 20px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .sell {
+      background: #111;
+      color: white;
+    }
+
+    .browse {
+      background: #ddd;
+    }
+
+    .products {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .seller {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .price {
+      margin: 10px 0;
+    }
+
+    .price strong {
+      font-size: 18px;
+    }
+
+    .price del {
+      color: #999;
+      margin-left: 8px;
+    }
+
+    .product button {
+      width: 100%;
+      padding: 10px;
+      background: #111;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    footer h4 {
+      color: white;
+    }
+
+    footer .footer-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    footer p, footer a {
+      color: #ccc;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Online Gikomba</h1>
+  <nav>
+    <a href="#">Browse</a>
+    <a href="#">Sell</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Kenya's Largest Marketplace for Fashion</h2>
+  <p>Buy and sell clothes and shoes across Kenya using Kenyan Shillings.</p>
+  <button class="sell">Sell Your Clothes</button>
+  <button class="browse">Browse Products</button>
+</section>
+
+<section class="products">
+  <div class="product">
+    <h3>Classic White T-Shirt</h3>
+    <p class="seller">Jane's Boutique (128)</p>
+    <div class="price">
+      <strong>Ksh 2,500</strong>
+      <del>Ksh 3,500</del>
+    </div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Denim Slim Fit Jeans</h3>
+    <p class="seller">Fashion Hub Nairobi (256)</p>
+    <div class="price">
+      <strong>Ksh 6,500</strong>
+      <del>Ksh 9,500</del>
+    </div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Casual Button-Down Shirt</h3>
+    <p class="seller">Jane's Boutique (89)</p>
+    <div class="price">
+      <strong>Ksh 3,800</strong>
+      <del>Ksh 5,200</del>
+    </div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Premium Hoodie</h3>
+    <p class="seller">Urban Streetwear (312)</p>
+    <div class="price">
+      <strong>Ksh 4,800</strong>
+      <del>Ksh 7,200</del>
+    </div>
+    <button>Add to Cart</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>For Buyers</h4>
+      <p>How to Buy</p>
+      <p>Shipping Information</p>
+      <p>Returns Policy</p>
+      <p>Buyer Protection</p>
+    </div>
+
+    <div>
+      <h4>For Sellers</h4>
+      <p>How to Sell</p>
+      <p>Seller Fees</p>
+      <p>Payment Methods</p>
+      <p>Seller Support</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Email: support@onlinegikomba.co.ke</p>
+      <p>Phone: +254 700 000 000</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Online Gikomba. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
